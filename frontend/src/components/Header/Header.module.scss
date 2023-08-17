@@ -1,0 +1,25 @@
+@import "@/styles/mixins";
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: rm(20) rm(40);
+  align-items: center;
+  justify-content: space-between;
+  padding: rm(25) 0;
+  &__logo {
+    font-size: rm(24);
+    font-weight: 900;
+    line-height: normal;
+  }
+  &__menu {
+    display: flex;
+    gap: rm(30);
+    list-style: none;
+  }
+  &__menuLink {
+    font-weight: 800;
+    color: var(--black);
+    text-decoration: none;
+  }
+}
