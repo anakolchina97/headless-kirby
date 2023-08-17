@@ -1,8 +1,25 @@
 import Header from "@/components/Header/Header";
 import Grid from "@/components/Grid/Grid";
 import Image from "next/image";
-import styles from "./page.module.scss";
+import axios from "axios";
 
-export default function Home() {
-  return <Grid />;
+async function getData() {
+  try {
+    const api = process.env.API_URL || "";
+    const res = await axios.post(api, {
+      query: "page('home')",
+      select: ["headline", "text"],
+    });
+    return res.data;
+  } catch (err) {
+    console.log(err);
+  }
+}
+
+export default async function Home() {
+  const {
+    result: { headline, text },
+  } = await getData();
+
+  return <Grid headline={headline} text={text} />;
 }

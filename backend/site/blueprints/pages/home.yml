@@ -1,0 +1,9 @@
+Title: Home
+
+fields:
+  headline:
+    label: Заголовок
+    type: text
+  text:
+    label: Текст
+    type: text
