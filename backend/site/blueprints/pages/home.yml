@@ -1,6 +1,10 @@
 Title: Home
 
 fields:
+  img:
+    label: Картинка
+    layout: cards
+    type: files
   headline:
     label: Заголовок
     type: text
