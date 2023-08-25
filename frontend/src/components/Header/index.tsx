@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./page.module.scss";
 import Link from "next/link";
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
     <header className={styles.header}>
       <p className={styles.header__logo}>Headless</p>

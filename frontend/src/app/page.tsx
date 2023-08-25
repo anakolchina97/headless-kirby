@@ -1,5 +1,5 @@
 import Grid from "@/components/Grid";
-import Image from "next/image";
+import React from "react";
 import axios from "axios";
 
 async function getData() {

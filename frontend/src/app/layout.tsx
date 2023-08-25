@@ -1,5 +1,6 @@
 import "../styles/mixins.scss";
 import "../styles/globals.scss";
+import React from "react";
 import { Inter } from "next/font/google";
 import Header from "@/components/Header";
 

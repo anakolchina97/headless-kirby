@@ -1,8 +1,9 @@
 import React from "react";
 import styles from "./page.module.scss";
 import Image from "next/image";
+import { IGrid } from "@/types";
 
-const Grid = ({ headline, text }) => {
+const Grid: React.FC<IGrid> = ({ headline, text }) => {
   return (
     <section className={styles.grid}>
       <div className={styles.grid__ImgWrapper}>
