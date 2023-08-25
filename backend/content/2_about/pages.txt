@@ -2,7 +2,7 @@ Title: About
 
 ----
 
-Img: - file://ibWY3hZWxHTw84Xq
+Img: - file://Loakn9SoMmshSavt
 
 ----
 
@@ -14,4 +14,4 @@ Text: One morning, when Gregor Samsa woke from troubled dreams, he found himself
 
 ----
 
-Uuid: TLbPFe0zimi9KFQP
+Uuid: HVQV7z2Gswm6nnHQ

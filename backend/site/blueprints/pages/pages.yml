@@ -1,13 +1,13 @@
-Title: Home
+Title: Pages
 
 fields:
   img:
-    label: Картинка
+    label: Image
     layout: cards
     type: files
   headline:
-    label: Заголовок
+    label: Title
     type: text
   text:
-    label: Текст
+    label: Text
     type: text
