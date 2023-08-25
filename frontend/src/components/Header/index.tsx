@@ -5,7 +5,9 @@ import Link from "next/link";
 const Header: React.FC = () => {
   return (
     <header className={styles.header}>
-      <p className={styles.header__logo}>Headless</p>
+      <Link className={styles.header__logo} href={"/"}>
+        Headless
+      </Link>
       <nav className={styles.header__nav}>
         <ul className={styles.header__menu}>
           <li className={styles.header__menuItem}>

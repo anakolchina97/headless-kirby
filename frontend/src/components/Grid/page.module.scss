@@ -1,6 +1,7 @@
 @import "../../styles/mixins.scss";
 
 .grid {
+  margin-bottom: rm(100);
   &__ImgWrapper {
     position: relative;
     aspect-ratio: 540 / 347;

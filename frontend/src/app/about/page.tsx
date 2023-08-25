@@ -7,7 +7,7 @@ async function getData() {
     const api = process.env.API_URL || "";
     const res = await axios.post(api, {
       query: "page('about')",
-      select: ["headline", "text"],
+      select: ["headline", "text", "file"],
     });
     return res.data;
   } catch (err) {
@@ -17,8 +17,8 @@ async function getData() {
 
 export default async function About() {
   const {
-    result: { headline, text },
+    result: { headline, text, file },
   } = await getData();
 
-  return <Grid headline={headline} text={text} />;
+  return <Grid headline={headline} text={text} file={file} />;
 }

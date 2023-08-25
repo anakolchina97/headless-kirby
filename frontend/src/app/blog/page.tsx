@@ -1,5 +1,29 @@
-import React from "react";
+import Articles from "@/components/Articles";
+import Grid from "@/components/Grid";
+import axios from "axios";
 
-export default function Blog() {
-  return <div>About</div>;
+async function getData() {
+  try {
+    const api = process.env.API_URL || "";
+    const res = await axios.post(api, {
+      query: "page('blog')",
+      select: ["headline", "text", "file"],
+    });
+    return res.data;
+  } catch (err) {
+    console.log(err);
+  }
+}
+
+export default async function About() {
+  const {
+    result: { headline, text, file },
+  } = await getData();
+
+  return (
+    <>
+      <Grid headline={headline} text={text} file={file} />
+      <Articles />
+    </>
+  );
 }
