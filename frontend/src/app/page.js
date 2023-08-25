@@ -1,5 +1,4 @@
-import Header from "@/components/Header/Header";
-import Grid from "@/components/Grid/Grid";
+import Grid from "@/components/Grid";
 import Image from "next/image";
 import axios from "axios";
 

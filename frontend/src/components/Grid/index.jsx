@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Grid.module.scss";
+import styles from "./page.module.scss";
 import Image from "next/image";
 
 const Grid = ({ headline, text }) => {
