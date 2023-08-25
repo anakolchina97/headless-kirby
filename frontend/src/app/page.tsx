@@ -1,5 +1,4 @@
 import Grid from "@/components/Grid";
-import React from "react";
 import axios from "axios";
 
 async function getData() {
