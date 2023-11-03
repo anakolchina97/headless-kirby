@@ -1,4 +1,4 @@
-import Grid from "@/components/Grid";
+import Hero from "@/components/Hero";
 import axios from "axios";
 
 async function getData() {
@@ -6,7 +6,14 @@ async function getData() {
     const api = process.env.API_URL || "";
     const res = await axios.post(api, {
       query: "page('home')",
-      select: ["headline", "text", "file"],
+      select: {
+        images: {
+          select: {
+            url: true,
+            type: true,
+          },
+        },
+      },
     });
     return res.data;
   } catch (err) {
@@ -16,8 +23,11 @@ async function getData() {
 
 export default async function Home() {
   const {
-    result: { headline, text, file },
+    result: { images },
   } = await getData();
 
-  return <Grid headline={headline} text={text} file={file} />;
+  console.log(await getData());
+  // console.log(files);
+
+  return <Hero images={images} />;
 }

@@ -2,15 +2,16 @@ import React from "react";
 import styles from "./page.module.scss";
 import Image from "next/image";
 import { IGrid } from "@/types";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
-const Grid: React.FC<IGrid> = ({ headline, text, file }) => {
+const Grid: React.FC<IGrid> = ({ images }) => {
   return (
     <section className={styles.grid}>
       <div className={styles.grid__ImgWrapper}>
-        <Image src={file.url} fill style={{ objectFit: "cover" }} alt="" />
+        {images.map((image: { url: string | StaticImport }) => (
+          <Image src={image.url} fill style={{ objectFit: "cover" }} alt="" />
+        ))}
       </div>
-      <h2 className={styles.grid__title}>{headline}</h2>
-      <p className={styles.grid__text}>{text}</p>
     </section>
   );
 };

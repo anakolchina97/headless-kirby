@@ -7,7 +7,5 @@ declare module "*.scss" {
 }
 
 export interface IGrid {
-  headline: string;
-  text: string;
-  file?: any;
+  images?: any;
 }

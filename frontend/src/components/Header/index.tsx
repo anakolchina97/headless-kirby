@@ -6,7 +6,7 @@ const Header: React.FC = () => {
   return (
     <header className={styles.header}>
       <Link className={styles.header__logo} href={"/"}>
-        Headless
+        Psychos
       </Link>
       <nav className={styles.header__nav}>
         <ul className={styles.header__menu}>
@@ -21,8 +21,8 @@ const Header: React.FC = () => {
             </Link>
           </li>
           <li className={styles.header__menuItem}>
-            <Link className={styles.header__menuLink} href={"/blog"}>
-              blog
+            <Link className={styles.header__menuLink} href={"/articles"}>
+              articles
             </Link>
           </li>
         </ul>
