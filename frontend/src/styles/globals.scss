@@ -1,24 +1,5 @@
-@import "./mixins.scss";
-
-:root {
-  --black: #000000;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
 .container {
-  padding: 0 rm(60);
-  max-width: rm(1920);
-  margin: 0 auto;
-  @media (max-width: 576px) {
-    padding: 0 rm(30);
-  }
-}
-
-.h2 {
-  font-size: rm(30);
+  width: 100%;
+  padding: 0 var(--container-padding);
+  box-sizing: border-box;
 }

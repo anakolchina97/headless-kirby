@@ -2,6 +2,21 @@ import React from "react";
 import styles from "./page.module.scss";
 import Link from "next/link";
 
+const links = [
+  {
+    name: "home",
+    href: "/",
+  },
+  {
+    name: "about",
+    href: "/about",
+  },
+  {
+    name: "articles",
+    href: "/articles",
+  },
+];
+
 const Header: React.FC = () => {
   return (
     <header className={styles.header}>
@@ -10,21 +25,13 @@ const Header: React.FC = () => {
       </Link>
       <nav className={styles.header__nav}>
         <ul className={styles.header__menu}>
-          <li className={styles.header__menuItem}>
-            <Link className={styles.header__menuLink} href={"/"}>
-              home
-            </Link>
-          </li>
-          <li className={styles.header__menuItem}>
-            <Link className={styles.header__menuLink} href={"/about"}>
-              about
-            </Link>
-          </li>
-          <li className={styles.header__menuItem}>
-            <Link className={styles.header__menuLink} href={"/articles"}>
-              articles
-            </Link>
-          </li>
+          {links.map(({ name, href }) => (
+            <li className={styles.header__menuItem} key={name}>
+              <Link className={styles.header__menuLink} href={href}>
+                {name}
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>

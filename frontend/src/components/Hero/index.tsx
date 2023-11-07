@@ -6,12 +6,12 @@ import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 const Grid: React.FC<IGrid> = ({ images }) => {
   return (
-    <section className={styles.grid}>
-      <div className={styles.grid__ImgWrapper}>
-        {images.map((image: { url: string | StaticImport }) => (
+    <section className={styles.hero}>
+      {images.map((image: { url: string | StaticImport }) => (
+        <div className={styles.hero__ImgWrapper}>
           <Image src={image.url} fill style={{ objectFit: "cover" }} alt="" />
-        ))}
-      </div>
+        </div>
+      ))}
     </section>
   );
 };

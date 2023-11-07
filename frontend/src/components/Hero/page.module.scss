@@ -1,28 +1,19 @@
 @import "../../styles/mixins.scss";
 
-.grid {
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   margin-bottom: rm(100);
+  gap: rm(88);
+  @media (max-width: 576px) {
+    display: flex;
+    flex-direction: column;
+  }
   &__ImgWrapper {
     position: relative;
-    aspect-ratio: 540 / 347;
-    max-width: rm(540);
-    margin-bottom: rm(65);
-    color: var(--black);
+    aspect-ratio: 537 / 347;
     @media (max-width: 576px) {
       margin-bottom: rm(30);
     }
-  }
-  &__title {
-    font-size: rm(20);
-    font-weight: 500;
-    line-height: normal;
-    margin-bottom: rm(25);
-  }
-  &__text {
-    font-size: rm(16);
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    max-width: rm(751);
   }
 }

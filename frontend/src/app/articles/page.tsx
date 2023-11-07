@@ -1,5 +1,3 @@
-import Articles from "@/components/Articles";
-import Grid from "@/components/Grid";
 import axios from "axios";
 
 async function getData() {
@@ -20,10 +18,5 @@ export default async function About() {
     result: { headline, text, file },
   } = await getData();
 
-  return (
-    <>
-      <Grid headline={headline} text={text} file={file} />
-      <Articles />
-    </>
-  );
+  return <>articles</>;
 }
