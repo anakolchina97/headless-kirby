@@ -1,0 +1,14 @@
+.btn {
+  display: inline-flex;
+  padding: rem(11) rem(26);
+  border-radius: rem(4);
+  border: rem(2) solid var(--black);
+  background: var(--white);
+  color: var(--black);
+  text-align: center;
+  font-size: rem(14);
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+}

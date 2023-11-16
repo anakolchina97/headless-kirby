@@ -1,15 +1,12 @@
-@use "@/styles/mixins";
-
 .header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: mixins.rem(25) 0;
+  padding: rem(25) 0;
   justify-content: space-between;
-  gap: mixins.rem(20) mixins.rem(40);
-  color: var(--black);
+  gap: rem(20) rem(40);
   &__logo {
-    font-size: mixins.rem(24);
+    font-size: rem(24);
     font-weight: 900;
     line-height: normal;
     text-decoration: none;
@@ -17,11 +14,11 @@
   }
   &__menu {
     display: flex;
-    gap: mixins.rem(30);
+    gap: rem(30);
     list-style: none;
   }
   &__menuLink {
-    font-size: mixins.rem(14);
+    font-size: rem(14);
     font-weight: 800;
     color: inherit;
     text-decoration: none;

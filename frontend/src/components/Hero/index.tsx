@@ -8,7 +8,7 @@ const Grid: React.FC<IGrid> = ({ images }) => {
   return (
     <section className={styles.hero}>
       {images.map((image: { url: string | StaticImport }) => (
-        <div className={styles.hero__ImgWrapper}>
+        <div className={styles.hero__wrapper}>
           <Image src={image.url} fill style={{ objectFit: "cover" }} alt="" />
         </div>
       ))}

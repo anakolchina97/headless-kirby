@@ -1,3 +1,5 @@
+import React from "react";
+
 declare module "*.scss" {
   interface IClassNames {
     [className: string]: string;
@@ -8,4 +10,10 @@ declare module "*.scss" {
 
 export interface IGrid {
   images?: any;
+}
+
+export interface IButton {
+  link: string;
+  children: React.ReactNode;
+  className?: string;
 }

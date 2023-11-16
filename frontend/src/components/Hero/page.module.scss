@@ -1,19 +1,17 @@
-@import "../../styles/mixins.scss";
-
 .hero {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-bottom: rm(100);
-  gap: rm(88);
+  margin-bottom: rem(40);
+  gap: rem(88);
   @media (max-width: 576px) {
     display: flex;
     flex-direction: column;
   }
-  &__ImgWrapper {
+  &__wrapper {
     position: relative;
     aspect-ratio: 537 / 347;
     @media (max-width: 576px) {
-      margin-bottom: rm(30);
+      margin-bottom: rem(30);
     }
   }
 }

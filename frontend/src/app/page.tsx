@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import axios from "axios";
+import About from "@/components/About";
 
 async function getData() {
   try {
@@ -27,7 +28,11 @@ export default async function Home() {
   } = await getData();
 
   console.log(await getData());
-  // console.log(files);
 
-  return <Hero images={images} />;
+  return (
+    <>
+      <Hero images={images} />
+      <About />
+    </>
+  );
 }

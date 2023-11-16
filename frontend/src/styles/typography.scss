@@ -1,0 +1,13 @@
+@use "@/styles/mixins";
+
+.h2 {
+  font-size: mixins.rem(30);
+  font-weight: 700;
+  line-height: normal;
+}
+
+.text {
+  font-size: mixins.rem(16);
+  font-weight: 400;
+  line-height: 1.2;
+}
