@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import axios from "axios";
 import About from "@/components/About";
+import Articles from "@/components/Articles";
 
 async function getData() {
   try {
@@ -33,6 +34,7 @@ export default async function Home() {
     <>
       <Hero images={images} />
       <About />
+      <Articles />
     </>
   );
 }

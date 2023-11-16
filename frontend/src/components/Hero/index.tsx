@@ -9,7 +9,14 @@ const Grid: React.FC<IGrid> = ({ images }) => {
     <section className={styles.hero}>
       {images.map((image: { url: string | StaticImport }) => (
         <div className={styles.hero__wrapper}>
-          <Image src={image.url} fill style={{ objectFit: "cover" }} alt="" />
+          <Image
+            src={image.url}
+            fill={true}
+            sizes="(max-width: 768px) 100vw"
+            style={{ objectFit: "cover" }}
+            priority={true}
+            alt=""
+          />
         </div>
       ))}
     </section>

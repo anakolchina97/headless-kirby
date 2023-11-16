@@ -17,3 +17,8 @@ export interface IButton {
   children: React.ReactNode;
   className?: string;
 }
+
+export interface IArticle {
+  src: string;
+  title: string;
+}
