@@ -21,3 +21,13 @@ fields:
         type: text
       btn:
         type: text
+  articles:
+    label: Articles
+    type: structure
+    fields:
+      icon:
+        type: files
+      title:
+        type: text
+      text:
+        type: text

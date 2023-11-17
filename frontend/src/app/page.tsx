@@ -10,6 +10,7 @@ async function getData() {
       query: "page('home')",
       select: {
         images: {
+          query: "page.images",
           select: {
             url: true,
             type: true,
