@@ -15,6 +15,14 @@ async function getData() {
             type: true,
           },
         },
+        about: {
+          query: "page.about.toStructure",
+          select: {
+            title: true,
+            text: true,
+            btn: true,
+          },
+        },
       },
     });
     return res.data;
@@ -25,7 +33,7 @@ async function getData() {
 
 export default async function Home() {
   const {
-    result: { images },
+    result: { images, about },
   } = await getData();
 
   console.log(await getData());
@@ -33,7 +41,7 @@ export default async function Home() {
   return (
     <>
       <Hero images={images} />
-      <About />
+      <About about={about} />
       <Articles />
     </>
   );

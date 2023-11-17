@@ -12,6 +12,10 @@ export interface IGrid {
   images?: any;
 }
 
+export interface IAbout {
+  about?: any;
+}
+
 export interface IButton {
   link: string;
   children: React.ReactNode;

@@ -11,3 +11,13 @@ fields:
   text:
     label: Text
     type: text
+  about:
+    label: About
+    type: structure
+    fields:
+      title:
+        type: text
+      text:
+        type: text
+      btn:
+        type: text
