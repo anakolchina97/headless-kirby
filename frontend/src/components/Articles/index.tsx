@@ -7,6 +7,9 @@ const data = [
   {
     title: "Relationship",
   },
+  {
+    title: "Addictions",
+  },
 ];
 
 const Articles = () => {

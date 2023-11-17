@@ -22,3 +22,9 @@ export interface IArticle {
   src: string;
   title: string;
 }
+
+export interface IPost {
+  src: string;
+  title: string;
+  text: string;
+}
