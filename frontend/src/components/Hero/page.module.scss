@@ -3,15 +3,13 @@
   grid-template-columns: repeat(2, 1fr);
   margin-bottom: rem(40);
   gap: rem(88);
-  @media (max-width: 576px) {
+  @media (max-width: $mobile) {
     display: flex;
+    gap: rem(40);
     flex-direction: column;
   }
   &__wrapper {
     position: relative;
     aspect-ratio: 537 / 347;
-    @media (max-width: 576px) {
-      margin-bottom: rem(30);
-    }
   }
 }

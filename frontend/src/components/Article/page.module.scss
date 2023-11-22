@@ -1,0 +1,20 @@
+.article {
+  display: flex;
+  gap: rem(10);
+  align-items: center;
+  justify-content: center;
+  border-radius: rem(10);
+  border: rem(1) solid #eeefef;
+  background: var(--white);
+  height: rem(90);
+  color: var(--black);
+  font-size: rem(20);
+  font-weight: 700;
+  line-height: normal;
+  padding: rem(10) rem(20);
+  @media (max-width: $tablet) {
+    font-size: rem(18);
+    gap: rem(20);
+    justify-content: flex-start;
+  }
+}

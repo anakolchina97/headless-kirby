@@ -10,6 +10,18 @@ const data = [
   {
     title: "Addictions",
   },
+  {
+    title: "Abuse",
+  },
+  {
+    title: "Development",
+  },
+  {
+    title: "Depression",
+  },
+  {
+    title: "Disorders",
+  },
 ];
 
 const Articles = () => {
@@ -20,6 +32,7 @@ const Articles = () => {
         {data.map(({ title }, index) => (
           <Link href={`/articles/${index + 1}`} key={index}>
             <Article
+              className={styles.articles__card}
               src={`/images/articles/icon-${index + 1}.svg`}
               title={title}
             />

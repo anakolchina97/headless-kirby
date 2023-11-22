@@ -25,6 +25,7 @@ export interface IButton {
 export interface IArticle {
   src: string;
   title: string;
+  className: string;
 }
 
 export interface IPost {

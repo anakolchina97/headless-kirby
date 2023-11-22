@@ -1,5 +1,22 @@
 .articles {
+  padding-bottom: rem(84);
   &__title {
     margin-bottom: rem(20);
+  }
+  &__cards {
+    display: grid;
+    gap: rem(20) rem(40);
+    grid-template-columns: repeat(3, 1fr);
+    a {
+      text-decoration: none;
+    }
+    @media (max-width: $tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: rem(20);
+    }
+    @media (max-width: $mobile) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
