@@ -3,6 +3,7 @@ import React from "react";
 import { getData } from "@/lib/getData";
 
 const article = async ({ params }: { params: { id: string } }) => {
+  console.log(params);
   const url = `articles/${params.id}`;
   const pageReq = await getData({
     query: `page('${url}')`,

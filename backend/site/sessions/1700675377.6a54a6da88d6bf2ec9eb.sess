@@ -1,0 +1,2 @@
+3c9d5f9f2385e2b88a3343d1316c1b2e31e38f18948b1c6ab9465b2727dcc895
+a:7:{s:9:"startTime";i:1700653611;s:10:"expiryTime";i:1700675377;s:8:"duration";i:7200;s:7:"timeout";i:1800;s:12:"lastActivity";i:1700668777;s:9:"renewable";b:1;s:4:"data";a:3:{s:10:"kirby.csrf";s:64:"45801fbf20431c1f6c8b548297285702748e2c4cfdc6166240edcdceaed92fae";s:12:"kirby.userId";s:8:"jjBAmmhE";s:20:"kirby.loginTimestamp";i:1700653621;}}
