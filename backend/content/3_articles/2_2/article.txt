@@ -1,16 +1,16 @@
-Title: 2
+Title: Addictions
 
 ----
 
-Img: 
+Img: - file://18HMTonQAq3St4TM
 
 ----
 
-Headline: Text 2
+Headline: Addictions
 
 ----
 
-Text: Text 2
+Text: Addictions. Text
 
 ----
 

@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./page.module.scss";
 import Link from "next/link";
 import Article from "../Article";
+import { getData } from "@/lib/getData";
 
 const data = [
   {
@@ -24,16 +25,29 @@ const data = [
   },
 ];
 
-const Articles = () => {
+const Articles = async () => {
+  const articlesRequest = await getData({
+    query: 'page("articles").children.listed',
+    select: {
+      title: true,
+      image: {
+        select: {
+          url: true,
+        },
+      },
+    },
+  });
+
+  const { result } = articlesRequest;
   return (
     <section className={styles.articles}>
       <h2 className={`${styles.articles__title} h2`}>Articles</h2>
       <section className={styles.articles__cards}>
-        {data.map(({ title }, index) => (
-          <Link href={`/articles/${index + 1}`} key={index}>
+        {result.map(({ title, image: { url } }: any, index: number) => (
+          <Link href={`/articles/${index + 1}`} key={title}>
             <Article
               className={styles.articles__card}
-              src={`/images/articles/icon-${index + 1}.svg`}
+              src={url}
               title={title}
             />
           </Link>
