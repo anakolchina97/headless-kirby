@@ -1,0 +1,13 @@
+Title: Article
+
+fields:
+  img:
+    label: Image
+    layout: cards
+    type: files
+  headline:
+    label: Title
+    type: text
+  text:
+    label: Text
+    type: text

@@ -37,8 +37,6 @@ export default async function Home() {
     result: { images, about },
   } = await getData();
 
-  console.log(await getData());
-
   return (
     <>
       <Hero images={images} />
