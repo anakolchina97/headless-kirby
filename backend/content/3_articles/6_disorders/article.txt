@@ -1,0 +1,25 @@
+Title: Disorders
+
+----
+
+Img: - file://CXhZUvlMgiAUwJgM
+
+----
+
+Headline: Disorders
+
+----
+
+Text: Personality disorders are a group of mental health conditions characterized by patterns of thoughts, feelings, and behaviors that deviate from societal norms. These disorders can significantly impact an individual's ability to function in various aspects of life, including relationships, work, and self-perception. This article aims to provide an overview of personality disorders, their types, symptoms, and available support.
+
+----
+
+Blocks: [{"content":{"level":"h4","text":"Introduction:"},"id":"d681c31e-e314-47ba-9dcf-2d8e85825a48","isHidden":false,"type":"heading"},{"content":{"text":"<p>Personality disorders are a group of mental health conditions characterized by patterns of thoughts, feelings, and behaviors that deviate from societal norms. These disorders can significantly impact an individual's ability to function in various aspects of life, including relationships, work, and self-perception. This article aims to provide an overview of personality disorders, their types, symptoms, and available support.</p>"},"id":"85b6b879-0f9a-4cd1-8d11-7d0962b99db4","isHidden":false,"type":"text"},{"content":{"text":"<ul><li>1</li><li>2</li><li>3</li></ul>"},"id":"6f92a22f-767f-46e6-803d-b2bf555a236d","isHidden":false,"type":"list"}]
+
+----
+
+Textblock: [{"content":{"level":"h4","text":"Types of Personality Disorders:"},"id":"068e4984-5093-4ef8-9b4c-8024c0abc9bc","isHidden":false,"type":"heading"},{"content":{"text":"<p>There are several types of personality disorders, each with its own unique characteristics. Some common ones include:</p>"},"id":"96711270-a40d-4338-b7b0-417573a52248","isHidden":false,"type":"text"}]
+
+----
+
+Uuid: R2fzM8QHhP8IA3Ya

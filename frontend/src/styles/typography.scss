@@ -6,6 +6,10 @@
   line-height: normal;
 }
 
+.h3 {
+  font-size: mixins.rem(22);
+}
+
 .text {
   font-size: mixins.rem(16);
   font-weight: 400;

@@ -15,14 +15,23 @@ const article = async ({ params }: { params: { id: string } }) => {
           url: true,
         },
       },
+      blocks: {
+        query: "page.blocks.toBlocks",
+        select: {
+          id: true,
+          type: true,
+          text: true,
+          list: true,
+        },
+      },
     },
   });
 
   const {
-    result: { text, headline, image },
+    result: { text, headline, image, blocks },
   } = pageReq;
 
-  return <Post src={image.url} title={headline} text={text} />;
+  return <Post src={image.url} title={headline} text={text} blocks={blocks} />;
 };
 
 export default article;

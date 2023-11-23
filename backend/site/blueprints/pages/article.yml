@@ -11,3 +11,10 @@ fields:
   text:
     label: Text
     type: text
+  blocks:
+    type: blocks
+    fieldsets:
+      - heading
+      - text
+      - image
+      - list

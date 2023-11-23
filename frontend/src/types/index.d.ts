@@ -32,4 +32,5 @@ export interface IPost {
   src: string;
   title: string;
   text: string;
+  blocks: any;
 }
