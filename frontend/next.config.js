@@ -7,7 +7,20 @@ const nextConfig = {
     prependData: `@import "constants.scss"; @import "mixins.scss";`,
   },
   images: {
-    domains: ["localhost"],
+    dangerouslyAllowSVG: true,
+    remotePatterns: [
+      {
+        protocol: "http",
+        hostname: "localhost",
+        port: "8000",
+        pathname: "/media/**",
+      },
+      {
+        protocol: "http",
+        hostname: "anakolchin.temp.swtest.ru",
+        pathname: "/media/**",
+      },
+    ],
   },
 };
 
