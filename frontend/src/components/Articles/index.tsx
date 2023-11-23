@@ -30,6 +30,7 @@ const Articles = async () => {
     query: 'page("articles").children.listed',
     select: {
       title: true,
+      id: true,
       image: {
         select: {
           url: true,
@@ -43,8 +44,8 @@ const Articles = async () => {
     <section className={styles.articles}>
       <h2 className={`${styles.articles__title} h2`}>Articles</h2>
       <section className={styles.articles__cards}>
-        {result.map(({ title, image: { url } }: any, index: number) => (
-          <Link href={`/articles/${index + 1}`} key={title}>
+        {result.map(({ title, id, image: { url } }: any, index: number) => (
+          <Link href={`/${id}`} key={title}>
             <Article
               className={styles.articles__card}
               src={url}
