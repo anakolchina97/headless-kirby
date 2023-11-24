@@ -3,14 +3,20 @@ import React from "react";
 import { getData } from "@/lib/getData";
 
 const article = async ({ params }: { params: { id: string } }) => {
-  console.log(params);
   const url = `articles/${params.id}`;
   const pageReq = await getData({
     query: `page('${url}')`,
     select: {
       headline: true,
       text: true,
-      image: {
+      icon: {
+        query: "page.icon.toFile",
+        select: {
+          url: true,
+        },
+      },
+      photo: {
+        query: "page.photo.toFile",
         select: {
           url: true,
         },
@@ -21,17 +27,32 @@ const article = async ({ params }: { params: { id: string } }) => {
           id: true,
           type: true,
           text: true,
-          list: true,
+        },
+      },
+      texts: {
+        query: "page.texts.toBlocks",
+        select: {
+          type: true,
+          text: true,
         },
       },
     },
   });
 
   const {
-    result: { text, headline, image, blocks },
+    result: { text, headline, icon, photo, blocks, texts },
   } = pageReq;
 
-  return <Post src={image.url} title={headline} text={text} blocks={blocks} />;
+  return (
+    <Post
+      icon={icon?.url}
+      photo={photo?.url}
+      title={headline}
+      text={text}
+      blocks={blocks}
+      texts={texts}
+    />
+  );
 };
 
 export default article;

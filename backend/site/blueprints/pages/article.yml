@@ -1,8 +1,8 @@
 Title: Article
 
 fields:
-  img:
-    label: Image
+  icon:
+    label: Icon
     layout: cards
     type: files
   headline:
@@ -11,10 +11,20 @@ fields:
   text:
     label: Text
     type: text
+  photo:
+    label: Photo
+    layout: cards
+    type: files
   blocks:
     type: blocks
     fieldsets:
       - heading
       - text
       - image
+      - list
+  texts:
+    type: blocks
+    fieldsets:
+      - heading
+      - text
       - list

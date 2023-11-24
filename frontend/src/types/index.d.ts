@@ -29,8 +29,10 @@ export interface IArticle {
 }
 
 export interface IPost {
-  src: string;
+  icon: string;
+  photo: string;
   title: string;
   text: string;
   blocks: any;
+  texts: any;
 }

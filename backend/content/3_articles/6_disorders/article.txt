@@ -2,7 +2,7 @@ Title: Disorders
 
 ----
 
-Img: - file://CXhZUvlMgiAUwJgM
+Icon: - file://9McRKzMr3bcieaLh
 
 ----
 
@@ -10,16 +10,20 @@ Headline: Disorders
 
 ----
 
-Text: Personality disorders are a group of mental health conditions characterized by patterns of thoughts, feelings, and behaviors that deviate from societal norms. These disorders can significantly impact an individual's ability to function in various aspects of life, including relationships, work, and self-perception. This article aims to provide an overview of personality disorders, their types, symptoms, and available support.
+Text: Title: Personality Disorders: Understanding and Support
 
 ----
 
-Blocks: [{"content":{"level":"h4","text":"Introduction:"},"id":"d681c31e-e314-47ba-9dcf-2d8e85825a48","isHidden":false,"type":"heading"},{"content":{"text":"<p>Personality disorders are a group of mental health conditions characterized by patterns of thoughts, feelings, and behaviors that deviate from societal norms. These disorders can significantly impact an individual's ability to function in various aspects of life, including relationships, work, and self-perception. This article aims to provide an overview of personality disorders, their types, symptoms, and available support.</p>"},"id":"85b6b879-0f9a-4cd1-8d11-7d0962b99db4","isHidden":false,"type":"text"},{"content":{"text":"<ul><li>1</li><li>2</li><li>3</li></ul>"},"id":"6f92a22f-767f-46e6-803d-b2bf555a236d","isHidden":false,"type":"list"}]
+Photo: - file://8xA1OeXiEjzHnXld
 
 ----
 
-Textblock: [{"content":{"level":"h4","text":"Types of Personality Disorders:"},"id":"068e4984-5093-4ef8-9b4c-8024c0abc9bc","isHidden":false,"type":"heading"},{"content":{"text":"<p>There are several types of personality disorders, each with its own unique characteristics. Some common ones include:</p>"},"id":"96711270-a40d-4338-b7b0-417573a52248","isHidden":false,"type":"text"}]
+Blocks: [{"content":{"level":"h4","text":"Introduction:"},"id":"eaba6778-3a0c-44ad-99a7-7ca72c11f265","isHidden":false,"type":"heading"},{"content":{"text":"<p>Personality disorders are a group of mental health conditions characterized by patterns of thoughts, feelings, and behaviors that deviate from societal norms. These disorders can significantly impact an individual's ability to function in various aspects of life, including relationships, work, and self-perception. This article aims to provide an overview of personality disorders, their types, symptoms, and available support.</p>"},"id":"4c7c0c1e-8953-4f18-bc43-2ebc7c4f3ccc","isHidden":false,"type":"text"}]
 
 ----
 
-Uuid: R2fzM8QHhP8IA3Ya
+Texts: [{"content":{"level":"h4","text":"Types of Personality Disorders:"},"id":"c1773fb8-2b09-4876-9d9a-dc6db5e53054","isHidden":false,"type":"heading"},{"content":{"text":"<p>There are several types of personality disorders, each with its own unique characteristics. Some common ones include:</p>"},"id":"cbd8b604-77dd-44b2-8977-bf88641905e8","isHidden":false,"type":"text"},{"content":{"text":"<ul><li>Borderline Personality Disorder (BPD): Individuals with BPD often experience intense emotional instability, difficulties in relationships, impulsive behaviors, and a fragile self-image.</li><li>Narcissistic Personality Disorder (NPD): People with NPD exhibit a grandiose sense of self-importance, a constant need for admiration, and a lack of empathy for others.</li><li>Antisocial Personality Disorder (ASPD): ASPD is characterized by a disregard for others' rights, a lack of remorse, impulsivity, and manipulative behavior.</li><li>Avoidant Personality Disorder (AvPD): Individuals with AvPD tend to avoid social situations, fear criticism or rejection, and have low self-esteem.</li><li>Obsessive-Compulsive Personality Disorder (OCPD): OCPD is marked by perfectionism, a preoccupation with rules and orderliness, and an excessive need for control.</li></ul>"},"id":"bbb5cf66-67cc-46eb-ac0e-25de7559d738","isHidden":false,"type":"list"}]
+
+----
+
+Uuid: O91kWGv2YoadSdb9
