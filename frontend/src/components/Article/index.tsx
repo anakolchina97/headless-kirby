@@ -11,7 +11,7 @@ const Article = ({ src, title, className }: IArticle) => {
           className={styles.article__img}
           src={src}
           width={40}
-          height={59}
+          height={54}
           alt=""
         />
       </picture>

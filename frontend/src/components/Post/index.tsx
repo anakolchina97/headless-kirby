@@ -1,13 +1,19 @@
 import { IPost } from "@/types";
 import React from "react";
 import styles from "./page.module.scss";
+import Image from "next/image";
 
 const Post = ({ src, title, text, blocks }: IPost) => {
-  console.log(blocks);
   return (
     <section className={styles.post}>
       <picture className={styles.post__picture}>
-        <img className={styles.post__img} src={src} />
+        <Image
+          className={styles.post__img}
+          src={src}
+          width={40}
+          height={54}
+          alt=""
+        />
       </picture>
       <h1 className="h2">{title}</h1>
       <p className={`${styles.post__text} text`}>{text}</p>
