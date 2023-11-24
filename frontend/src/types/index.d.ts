@@ -36,3 +36,7 @@ export interface IPost {
   blocks: any;
   texts: any;
 }
+
+export interface IArticles {
+  title: string;
+}

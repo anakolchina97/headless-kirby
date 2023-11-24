@@ -41,7 +41,7 @@ export default async function Home() {
     <>
       <Hero images={images} />
       <About about={about} />
-      <Articles />
+      <Articles title="Articles" />
     </>
   );
 }

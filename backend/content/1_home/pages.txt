@@ -42,17 +42,7 @@ About:
 
 ----
 
-Articles:
-
-- 
-  icon:
-    - file://zRit0nQZLj9D4qa3
-  title: Relationship
-  text: Relationship. Description 1
-- 
-  icon: [ ]
-  title: Title 2
-  text: Text 2
+Articles: 
 
 ----
 

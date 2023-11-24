@@ -1,3 +1,5 @@
-export default async function Articles() {
-  return <>Articles</>;
+import Articles from "@/components/Articles";
+
+export default async function page() {
+  return <Articles title="" />;
 }
